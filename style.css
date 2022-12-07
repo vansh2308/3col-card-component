@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  color: white;  
+}
+p{
+  font-weight: 200;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin-bottom: 50%;
+}
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 36px;
+  margin: 20px 0;
+  letter-spacing: 3px;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+button{
+  background: white;
+  padding: 12px 25px;
+  border-radius: 40px;
+  outline: none;
+  border: 2px solid transparent;
+  width: max-content;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  
+  
+}
+button:hover{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white !important;
+  cursor: pointer;
+}
+.card{
+  width: 33%;
+  background-color: #e28525;
+  padding: 40px;
+}
+.card:nth-child(1){
+  border-radius: 10px 0 0 10px;
+}
+.card:nth-child(2){
+  background-color: #016972;
+}
+.card:nth-child(3){
+  background-color: #00403f;
+  border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+      width: 90%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-y: scroll;
+      position: relative;
+      transform: none;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    body{padding: 30px 0;}
+    .card{width: 100%;}
+    button{position: relative; margin-bottom: 0;}
+    p{margin-bottom: 10%;}
+    .card:nth-child(1){border-radius: 10px 10px 0 0;}
+    .card:nth-child(3){border-radius: 0 0 10px 10px;}
+    
+
+}
